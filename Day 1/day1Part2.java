@@ -20,21 +20,13 @@ public class day1Part2 {
         
         for(int i = 0; i < integer_digits.length; i++) {
             int new_index = (i + integer_digits.length/2) % integer_digits.length;
-            //System.out.println(i);
-            // System.out.println(new_index);
-
+            
             if(integer_digits[i] == integer_digits[new_index]) {
 
                 total = total + integer_digits[i];
             }
         }
-      /* int i = 0;
-        while(i != integer_digits.length/2) {
-            if(integer_digits[i] == integer_digits[i + integer_digits.length/2]) {
-                total = total + integer_digits[i];
-            }
-            i++;
-        }*/
+      
         
         
         System.out.println(total);
