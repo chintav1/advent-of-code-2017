@@ -13,7 +13,7 @@ public class day4Part2 {
             String[] words = pass_phrase.split(" ");
             
             
-            //check for duplicate words
+            //check if any two words are the same if rearranged
             for(int i = 0; i < words.length - 1; i++) {
                 char[] characters1 = words[i].toCharArray();
                 Arrays.sort(characters1);
